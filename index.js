@@ -23,6 +23,8 @@ const app = express();
  * STEP 4: Create a route for "/dance" that serves the dance.html file
  */
 
+app.get('/dance', (req, res) => {
+    res.sendFile(__dirname + '/public/dance.html');
 
 app.listen(3000, () => {
     console.log(`Server is running`);
